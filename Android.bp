@@ -97,7 +97,7 @@ cc_binary {
         "kcmp.c",
         "kexec.c",
         "keyctl.c",
-        "kvm.c",
+        //"kvm.c",
         "ldt.c",
         "link.c",
         "listen.c",
@@ -289,6 +289,14 @@ cc_binary {
 
             local_include_dirs: [
                 "linux/aarch64",
+                "linux",
+            ],
+        },
+        riscv64: {
+            cflags: ["-DRISCV=1"],
+
+            local_include_dirs: [
+                "linux/riscv",
                 "linux",
             ],
         },

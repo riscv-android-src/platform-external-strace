@@ -32,7 +32,7 @@
 #ifdef RISCV
 
 # include "xlat/riscv_flush_icache_flags.h"
-
+#if 0
 SYS_FUNC(riscv_flush_icache)
 {
 	/* uintptr_t start */
@@ -49,5 +49,5 @@ SYS_FUNC(riscv_flush_icache)
 
 	return RVAL_DECODED;
 }
-
+#endif
 #endif /* RISCV */

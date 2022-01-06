@@ -97,7 +97,7 @@ cc_binary {
         "kcmp.c",
         "kexec.c",
         "keyctl.c",
-        //"kvm.c",
+        "kvm.c",
         "ldt.c",
         "link.c",
         "listen.c",
